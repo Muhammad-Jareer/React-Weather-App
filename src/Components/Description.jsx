@@ -58,9 +58,9 @@ const Description = ({weather, units}) => {
     ]
 
     return (
-        <div className="w-full py-12 grid gap-10 grid-cols-2 sm:grid-cols-3 capitalize">
+        <div className="w-full py-8 grid gap-10 grid-cols-2 sm:grid-cols-3 capitalize">
             {cards.map(({id, icon, title, data, unit}) => (
-                <div key={id} className="flex flex-col gap-3 items-center justify-center text-white bg-[#000000cb] rounded-lg px-4 py-8">
+                <div key={id} className="flex flex-col gap-3 items-center justify-center text-white bg-[#000000cb] rounded-lg px-4 py-2">
                     <div className="flex items-center gap-4">
                         {icon}
                         <p className='inline sm:text-3xl'>{title}</p>
